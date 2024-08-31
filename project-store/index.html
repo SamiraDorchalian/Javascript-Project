@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-Store</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header>
+      <p>Project-Store-Javascript</p>
+    </header>
+    <main>
+      <div id="search">
+        <input type="text" placeholder="Search name" id="search-input" />
+        <div>
+          <button class="filter selected" data-filter="all">All</button>
+          <button class="filter" data-filter="tech">Tech</button>
+          <button class="filter" data-filter="clothing">Clothing</button>
+          <button class="filter" data-filter="health">Health</button>
+        </div>
+        <div id="search-price">
+          <input type="number" placeholder="Search Price" />
+          <button>Search</button>
+        </div>
+      </div>
+      <div id="products">
+        <div class="product-item" data-category="tech">
+          <img src="./img/iphone.png" alt="iamge-product" />
+          <p>Apple iphone 14 pro</p>
+          <span>$ 1499</span>
+        </div>
+        <div class="product-item" data-category="clothing">
+          <img src="./img//shoes.png" alt="iamge-product" />
+          <p>Running Shoes</p>
+          <span>$ 550</span>
+        </div>
+        <div class="product-item" data-category="clothing">
+          <img src="./img/bag.png" alt="iamge-product" />
+          <p>College Bag</p>
+          <span>$ 99</span>
+        </div>
+        <div class="product-item" data-category="clothing">
+          <img src="./img/jacket.png" alt="iamge-product" />
+          <p>Boy's Jacket</p>
+          <span>$ 260</span>
+        </div>
+        <div class="product-item" data-category="health">
+          <img src="./img/shampoo.png" alt="iamge-product" />
+          <p>Keratin Hair Care</p>
+          <span>$ 55</span>
+        </div>
+        <div class="product-item" data-category="tech">
+          <img src="./img/airpods.png" alt="iamge-product" />
+          <p>Apple Airpods Pro</p>
+          <span>$ 555</span>
+        </div>
+        <div class="product-item" data-category="health">
+          <img src="./img/vitamin.png" alt="iamge-product" />
+          <p>Vitamin E</p>
+          <span>$ 49</span>
+        </div>
+        <div class="product-item" data-category="health">
+          <img src="./img/cream.png" alt="iamge-product" />
+          <p>Face Cream</p>
+          <span>$ 24</span>
+        </div>
+        <div class="product-item" data-category="tech">
+          <img src="./img/watch.png" alt="iamge-product" />
+          <p>Apple Watch</p>
+          <span>$ 24</span>
+        </div>
+      </div>
+    </main>
+    <script src="./js/app.js"></script>
+  </body>
+</html>
