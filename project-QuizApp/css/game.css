@@ -91,3 +91,17 @@ h3 {
   color: #fff;
   border: 2px solid #1c1553;
 }
+.correct {
+  background-color: #5bd7bc;
+}
+.incorrect {
+  background-color: #fe6681;
+}
+.correct:hover {
+  background-color: #5bd7bc;
+  opacity: 0.5;
+}
+.incorrect:hover {
+  background-color: #fe6681;
+  opacity: 0.5;
+}
