@@ -105,3 +105,6 @@ h3 {
   background-color: #fe6681;
   opacity: 0.5;
 }
+#error {
+  display: none;
+}
