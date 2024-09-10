@@ -1,30 +1,15 @@
-class Products {
+import Display from "./Display.js";
+
+class Products extends Display {
   constructor(parent, products, cart) {
-    this.parent = parent;
-    this.products = products;
+    super(parent, products);
     this.cart = cart;
-    this.parent.addEventListener("click", this);
   }
+
   showProducts() {
     this.products.forEach((product) => this.createCard(product));
   }
-  createCard(data) {
-    const carsEle = document.createElement("div");
 
-    const imgEle = this.productImg(data);
-    const infoEle = this.productInfo(data);
-
-    carsEle.innerHTML = imgEle;
-    carsEle.innerHTML += infoEle;
-
-    this.parent.appendChild(carsEle);
-  }
-  productImg(data) {
-    const { image, alt } = data;
-    const imgJSX = `<img alt=${alt} src=${image}  />`;
-
-    return imgJSX;
-  }
   productInfo(data) {
     const { id, name, price } = data;
 
