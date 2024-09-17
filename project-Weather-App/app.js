@@ -1,51 +1,16 @@
-const BASE_URL = "https://api.openweathermap.org/data/2.5";
-const API_KEY = "ad0913567af73588990574c1cd94d922";
-
-const DAYS = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturdey",
-];
+import { getWeekDay } from "./utils/customDate.js";
+import getWeatherData from "./utils/httpReg.js";
+import { removeModal, showModal } from "./utils/modal.js";
 
 const searchInput = document.querySelector("input");
 const searchButton = document.querySelector("button");
 const weatherContainer = document.getElementById("weather");
 const forecastContainer = document.getElementById("forecast");
 const locationIcon = document.getElementById("location");
-
-const getCurrentWeatherByName = async (city) => {
-  const url = `${BASE_URL}/weather?q=${city}&appid=${API_KEY}&units=metric`;
-  const response = await fetch(url);
-  const json = await response.json();
-  return json;
-};
-
-const getCurrentWeatherByCoordinates = async (lat, lon) => {
-  const url = `${BASE_URL}/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
-  const response = await fetch(url);
-  const json = await response.json();
-  return json;
-};
-
-const getForecastWeatherByName = async (city) => {
-  const url = `${BASE_URL}/forecast?q=${city}&appid=${API_KEY}&units=metric`;
-  const response = await fetch(url);
-  const json = await response.json();
-  return json;
-};
-
-const getForecasWeatherByCoordinates = async (lat, lon) => {
-  const url = `${BASE_URL}/forecast?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
-  const response = await fetch(url);
-  const json = await response.json();
-  return json;
-};
+const modalButton = document.getElementById("modal-button");
 
 const renderCurrentWeather = (data) => {
+  if (!data) return;
   const weatherJSX = `
     <h1>${data.name}, ${data.sys.country}</h1>
     <div id="main">
@@ -63,11 +28,9 @@ const renderCurrentWeather = (data) => {
   weatherContainer.innerHTML = weatherJSX;
 };
 
-const getWeekDay = (data) => {
-  return DAYS[new Date(data * 1000).getDay()];
-};
-
 const renderForecastWeather = (data) => {
+  if (!data) return;
+
   forecastContainer.innerHTML = "";
   data = data.list.filter((obj) => obj.dt_txt.endsWith("12:00:00"));
   data.forEach((i) => {
@@ -89,22 +52,20 @@ const searchHandler = async () => {
   const cityName = searchInput.value;
 
   if (!cityName) {
-    alert("Please enter city name!");
+    showModal("Please enter city name!");
+    return;
   }
-  const currentData = await getCurrentWeatherByName(cityName);
+
+  const currentData = await getWeatherData("current", cityName);
   renderCurrentWeather(currentData);
-  const forecastData = await getForecastWeatherByName(cityName);
+  const forecastData = await getWeatherData("forecast", cityName);
   renderForecastWeather(forecastData);
 };
 
 const positionCallback = async (position) => {
-  const { latitude, longitude } = position.coords;
-  const currentData = await getCurrentWeatherByCoordinates(latitude, longitude);
+  const currentData = await getWeatherData("current", position.coords);
   renderCurrentWeather(currentData);
-  const forecastData = await getForecasWeatherByCoordinates(
-    latitude,
-    longitude
-  );
+  const forecastData = await getWeatherData("forecast", position.coords);
   renderForecastWeather(forecastData);
 };
 
@@ -116,9 +77,18 @@ const locationHandler = () => {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(positionCallback, errorCallback);
   } else {
-    alert("Your browser does not support geolocation");
+    showModal("Your browser does not support geolocation");
   }
+};
+
+const initHandler = async () => {
+  const currentData = await getWeatherData("current", "seoul");
+  renderCurrentWeather(currentData);
+  const forecastData = await getWeatherData("forecast", "seoul");
+  renderForecastWeather(forecastData);
 };
 
 searchButton.addEventListener("click", searchHandler);
 locationIcon.addEventListener("click", locationHandler);
+modalButton.addEventListener("click", removeModal);
+document.addEventListener("DOMContentLoaded", initHandler);
