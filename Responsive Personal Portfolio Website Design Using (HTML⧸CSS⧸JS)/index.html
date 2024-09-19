@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project-Portfolio-Website</title>
+    <!-- <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    /> -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="container">
+        <a href="#" class="logo">
+          <img src="" alt="" class="img-fluif" />
+        </a>
+        <ul class="menu">
+          <li class="menu-item">
+            <a href="#hero" class="menu_link active-link">Home</a>
+          </li>
+          <li class="menu-item">
+            <a href="#about" class="menu_link">About</a>
+          </li>
+          <li class="menu-item">
+            <a href="#resume" class="menu_link">Resume</a>
+          </li>
+          <li class="menu-item">
+            <a href="#portfolio" class="menu_link">Portfolio</a>
+          </li>
+          <li class="menu-item">
+            <a href="#services" class="menu_link">Services</a>
+          </li>
+          <li class="menu-item">
+            <a href="#contact" class="menu_link">Contact</a>
+          </li>
+          <ion-icon name="close-outline" class="close-icon"></ion-icon>
+        </ul>
+        <ion-icon name="menu-outline" class="toggle-icon"></ion-icon>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero section" id="hero">
+        <div class="hero_container container grid">
+          <div class="hero_content">
+            <h4>Hi there,</h4>
+            <h1>
+              I'm
+              <span
+                class="typed"
+                data-typed-items="Designer, Developer, Freelancer"
+              >
+              </span>
+            </h1>
+            <p>
+              I'm creative designer based in Iran, and I'm very passionate and
+              dedicated to my work
+            </p>
+            <div class="hero_social">
+              <a href="#"><ion-icon name="logo-dribbble"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-github"></ion-icon></a>
+              <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            </div>
+            <a href="#contact" class="btn">
+              Read More
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+          <div class="hero_img">
+            <img src="./image1.png" alt="" class="img-fluid" />
+          </div>
+        </div>
+      </section>
+
+      <section class="about section" id="about">
+        <h2 class="section_title">About Me</h2>
+
+        <div class="about_container container grid">
+          <div class="about_img">
+            <img src="./web_developer_img.jpg" alt="" />
+          </div>
+          <div class="about_content">
+            <h1>I make a professional and creative design</h1>
+            <p>
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+              Molestiae officia placeat ipsa sapiente incidunt cupiditate sequi
+              atque vel nemo earum.
+            </p>
+            <div class="about_info">
+              <div>
+                <span class="number">200</span>
+                <br />
+                <span class="text">Completed <br />projects</span>
+              </div>
+              <div>
+                <span class="number">120</span>
+                <br />
+                <span class="text">Positive <br />review's</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="resume section" id="resume">
+        <h2 class="section_title">Resume</h2>
+          <div class="resume_container container grid">
+            <div class="resume_tabs">
+            <ul>
+              <li>
+                <a href="#page-1" class="current">Education</a>
+              </li>
+              <li>
+                <a href="#page-2">Experience</a>
+              </li>
+              <li>
+                <a href="#page-3">Skills</a>
+              </li>
+              <li>
+                <a href="#page-4">Awards</a>
+              </li>
+            </ul>
+                </div>
+                    <div class="resume_content">
+                        <div id="page-1" class="page one">
+                            <div class="page-heading">Education</div>
+                            <div class="resume_wrap">
+                              <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+                              </div>
+                              <div class="resume_wrap-content">
+                                <span class="date">2020-2024</span>
+                                <h4>Art & Creative Director</h4>
+                                <span class="position">Mansoura University</span>
+                                <p>
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                  Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                  dolorem distinctio eum!
+                                </p>
+                              </div>
+                          </div>
+                            <div class="resume_wrap">
+                              <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+                              </div>
+                              <div class="resume_wrap-content">
+                                <span class="date">2015-2017</span>
+                                <h4>Diploma in Computer</h4>
+                                <span class="position">Mansoura University</span>
+                                <p>
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                  Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                  dolorem distinctio eum!
+                                </p>
+                              </div>
+                            </div>
+                            <div class="resume_wrap">
+                              <div class="resume_wrap-icon">
+                                <ion-icon name="school-outline"></ion-icon>
+                              </div>
+                              <div class="resume_wrap-content">
+                                <span class="date">2022-2026</span>
+                                <h4>Bachelor in Computer Science</h4>
+                                <span class="position">Mansoura University</span>
+                                <p>
+                                  Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                  Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                  dolorem distinctio eum!
+                                </p>
+                              </div>
+                              </div>
+                        </div>
+
+                        <div id="page-2" class="page two">
+                          <div class="page-heading">Experince</div>
+                          <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                              <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                              <span class="date">2012-2016</span>
+                              <h4>Software Developer</h4>
+                              <span class="position">Mansoura University</span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                dolorem distinctio eum!
+                              </p>
+                            </div>
+                        </div>
+                          <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                              <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                              <span class="date">2015-2017</span>
+                              <h4>Web Marketinj</h4>
+                              <span class="position">Mansoura University</span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                dolorem distinctio eum!
+                              </p>
+                            </div>
+                          </div>
+                          <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                              <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                              <span class="date">2017-2018</span>
+                              <h4>UI/UX Designer</h4>
+                              <span class="position">Mansoura University</span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                dolorem distinctio eum!
+                              </p>
+                            </div>
+                            </div>
+                        </div>
+
+                        <div id="page-3" class="page three">
+                          <div class="page-heading">Skills</div>
+                          <div class="progressBoxs grid">
+                            <div class="progressBox">
+                              <div class="progress_name">
+                                <span>HTML</span>
+                                <span>90%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress_bar" style="width: 90%;"></div>
+                              </div>
+                            </div>
+
+                            <div class="progressBox">
+                              <div class="progress_name">
+                                <span>CSS</span>
+                                <span>80%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress_bar" style="width: 80%;"></div>
+                              </div>
+                            </div>
+
+                            <div class="progressBox">
+                              <div class="progress_name">
+                                <span>Javascript</span>
+                                <span>65%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress_bar" style="width: 65%;"></div>
+                              </div>
+                            </div>
+
+                            <div class="progressBox">
+                              <div class="progress_name">
+                                <span>ReactJs</span>
+                                <span>60%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress_bar" style="width: 60%;"></div>
+                              </div>
+                            </div>
+
+                            <div class="progressBox">
+                              <div class="progress_name">
+                                <span>jQuery</span>
+                                <span>70%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress_bar" style="width: 70%;"></div>
+                              </div>
+                            </div>
+
+                            <div class="progressBox">
+                              <div class="progress_name">
+                                <span>Photoshop</span>
+                                <span>85%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress_bar" style="width: 85%;"></div>
+                              </div>
+                            </div>
+
+                            <div class="progressBox">
+                              <div class="progress_name">
+                                <span>Figma</span>
+                                <span>75%</span>
+                              </div>
+                              <div class="progress">
+                                <div class="progress_bar" style="width: 75%;"></div>
+                              </div>
+                            </div>
+
+                          </div>
+                        </div>
+
+                        <div id="page-4" class="page four"></div>
+                          <div class="page-heading">Awards</div>
+                          <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                              <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                              <span class="date">2012-2016</span>
+                              <h4>Top 10 web Develpoer</h4>
+                              <span class="position">Mansoura University</span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                dolorem distinctio eum!
+                              </p>
+                            </div>
+                        </div>
+                          <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                              <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                              <span class="date">2015-2017</span>
+                              <h4>Top 5 leaserShip Exellence Winner</h4>
+                              <span class="position">Mansoura University</span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                dolorem distinctio eum!
+                              </p>
+                            </div>
+                          </div>
+                          <div class="resume_wrap">
+                            <div class="resume_wrap-icon">
+                              <ion-icon name="school-outline"></ion-icon>
+                            </div>
+                            <div class="resume_wrap-content">
+                              <span class="date">2017-2018</span>
+                              <h4>Top 4 Web Tester</h4>
+                              <span class="position">Mansoura University</span>
+                              <p>
+                                Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                                Nihil cumque rerum nulla tempore tempora vitae harum eos
+                                dolorem distinctio eum!
+                              </p>
+                            </div>
+                            </div>
+                        </div>
+                        
+
+                    </div>
+                </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5/dist/ionicons/ionicons.esm.js"
+    ></script>
+
+    <script
+      nomodule=""
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
