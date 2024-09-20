@@ -8,6 +8,18 @@
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     /> -->
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -178,7 +190,8 @@
                           <div class="page-heading">Experince</div>
                           <div class="resume_wrap">
                             <div class="resume_wrap-icon">
-                              <ion-icon name="school-outline"></ion-icon>
+                              <!-- <ion-icon name="school-outline"></ion-icon> -->
+                              <i class="fa-thin fa-suitcase"></i>
                             </div>
                             <div class="resume_wrap-content">
                               <span class="date">2012-2016</span>
@@ -193,7 +206,8 @@
                         </div>
                           <div class="resume_wrap">
                             <div class="resume_wrap-icon">
-                              <ion-icon name="school-outline"></ion-icon>
+                              <!-- <ion-icon name="school-outline"></ion-icon> -->
+                              <i class="fa-thin fa-suitcase"></i>
                             </div>
                             <div class="resume_wrap-content">
                               <span class="date">2015-2017</span>
@@ -208,7 +222,8 @@
                           </div>
                           <div class="resume_wrap">
                             <div class="resume_wrap-icon">
-                              <ion-icon name="school-outline"></ion-icon>
+                              <!-- <ion-icon name="school-outline"></ion-icon> -->
+                              <i class="fa-thin fa-suitcase"></i>
                             </div>
                             <div class="resume_wrap-content">
                               <span class="date">2017-2018</span>
@@ -353,7 +368,303 @@
                 </div>
         </div>
       </section>
+
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section_title">Portfolio</h2>
+
+        <div class="portfolio_container container">
+          <ul class="portfolio_filters">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-app">App</li>
+            <li data-filter=".filter-card">Card</li>
+            <li data-filter=".filter-web">Web</li>
+          </ul>
+          <div class="portfolio_wrap-container">
+            <div class="portfolio_item filter-web">
+              <div class="portfolio_wrap">
+                <img src="./images1.jpeg" alt="" class="img-fluid">
+                <div class="portfolio_info">
+                  <h4>Web 3</h4>
+                  <p>Web</p>
+                  <div class="portfolio_links">
+                    <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-app">
+              <div class="portfolio_wrap">
+                <img src="./images2.jpeg" alt="" class="img-fluid">
+                <div class="portfolio_info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <div class="portfolio_links">
+                    <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-app">
+              <div class="portfolio_wrap">
+                <img src="./images3.jpeg" alt="" class="img-fluid">
+                <div class="portfolio_info">
+                  <h4>App 1</h4>
+                  <p>App</p>
+                  <div class="portfolio_links">
+                    <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-card">
+              <div class="portfolio_wrap">
+                <img src="./images4.jpg" alt="" class="img-fluid">
+                <div class="portfolio_info">
+                  <h4>Card 2</h4>
+                  <p>Card</p>
+                  <div class="portfolio_links">
+                    <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-card">
+              <div class="portfolio_wrap">
+                <img src="./images5.jpg" alt="" class="img-fluid">
+                <div class="portfolio_info">
+                  <h4>Web 2</h4>
+                  <p>Web</p>
+                  <div class="portfolio_links">
+                    <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="portfolio_item filter-app">
+              <div class="portfolio_wrap">
+                <img src="./images6.jpg" alt="" class="img-fluid">
+                <div class="portfolio_info">
+                  <h4>App 3</h4>
+                  <p>App</p>
+                  <div class="portfolio_links">
+                    <a href="#"><i class="fa-solid fa-plus"></i></a>
+                    <a href="#"><i class="fa-solid fa-link"></i></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonial section">
+        <h2 class="section_title">Testimonial</h2>
+
+        <div class="testimonial_container container swiper">
+          <div class="swiper-wrapper">
+            <div class="testimonial_item swiper-slide">
+              <i class='bx bxs-quote-alt-left'></i>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquam.</p>
+              <div class="img_name">
+                <img src="./gril1.jpeg" alt="">
+                <span class="name">Samira Dorchalian</span>
+                <span class="post">Clients</span>
+              </div>
+            </div>
+            <div class="testimonial_item swiper-slide">
+              <i class='bx bxs-quote-alt-left'></i>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquam.</p>
+              <div class="img_name">
+                <img src="./boy1.jpeg" alt="">
+                <span class="name">Ali Bahadori</span>
+                <span class="post">Clients</span>
+              </div>
+            </div> 
+            <div class="testimonial_item swiper-slide">
+              <i class='bx bxs-quote-alt-left'></i>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquam.</p>
+              <div class="img_name">
+                <img src="./boy2.jpeg" alt="">
+                <span class="name">Sam Adib</span>
+                <span class="post">Clients</span>
+              </div>
+            </div>
+            <div class="testimonial_item swiper-slide">
+              <i class='bx bxs-quote-alt-left'></i>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, aliquam.</p>
+              <div class="img_name">
+                <img src="./gril2.jpeg" alt="">
+                <span class="name">Nargess Aria</span>
+                <span class="post">Clients</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="services section" id="services">
+        <h2 class="section_title">Services</h2>
+
+        <div class="services_container container grid">
+          <div class="services_item">
+            <i class='bx bx-grid'></i>
+            <h3 class="services_title">UI/UX <br>Designer</h3>
+            <span class="services_button">
+              View More <i class='bx bx-chevron-right'></i>
+            </span>
+            <div class="services_modal">
+              <div>
+                <ion-icon name="close-outline" class="modal_close-icon"></ion-icon>
+                <h3 class="services_modal-title">UI/UX Designer</h3>
+                <p class="services_modal-description">Services with more than 3 years of exporience. Providing quality work to clients and companies.</p>
+                <ul>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I develop the user interface.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">Web page development.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I create ux element interactions.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I position your company brand.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">Design and mockups of products for companies</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="services_item">
+            <i class='bx bx-grid'></i>
+            <h3 class="services_title">Frontend <br>Developer</h3>
+            <span class="services_button">
+              View More <i class='bx bx-chevron-right'></i>
+            </span>
+            <div class="services_modal">
+              <div>
+                <ion-icon name="close-outline" class="modal_close-icon"></ion-icon>
+                <h3 class="services_modal-title">Frontend Developer</h3>
+                <p class="services_modal-description">Services with more than 3 years of exporience. Providing quality work to clients and companies.</p>
+                <ul>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I develop the user interface.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">Web page development.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I create ux element interactions.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I position your company brand.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">Design and mockups of products for companies</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="services_item">
+            <i class='bx bx-grid'></i>
+            <h3 class="services_title">Backend <br>Developer</h3>
+            <span class="services_button">
+              View More <i class='bx bx-chevron-right'></i>
+            </span>
+            <div class="services_modal">
+              <div>
+                <ion-icon name="close-outline" class="modal_close-icon"></ion-icon>
+                <h3 class="services_modal-title">Backend Developer</h3>
+                <p class="services_modal-description">Services with more than 3 years of exporience. Providing quality work to clients and companies.</p>
+                <ul>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I develop the user interface.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">Web page development.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I create ux element interactions.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">I position your company brand.</p>
+                  </li>
+                  <li>
+                    <i class='bx bx-check-circle'></i>
+                    <p class="services_modal-info">Design and mockups of products for companies</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <h2 class="section_title">Contact Me</h2>
+
+        <div class="contact_container container">
+          <div class="contact_content">
+            <div class="inputs">
+              <input type="text" placeholder="Name">
+              <input type="email" placeholder="Email">
+            </div>
+            <input type="password" placeholder="Password">
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <a href="#" class="btn">Send Message
+              <ion-icon name="chevron-forward-outline"></ion-icon>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer_bg">
+          <div class="footer_container container">
+            <div class="main_footer">
+              <div class="footer_social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+              </div>
+              <h3>Project FrontEnd</h3>
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium necessitatibus, dolorem nesciunt cupiditate architecto officiis eum qui eos maiores ea?</p>
+            </div>
+            <div class="footer_copy">&#169; FrontEnd. All right reserved</div>
+          </div>
+        </div>
+      </footer>
+
     </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/3.3.1/mixitup.min.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
 
