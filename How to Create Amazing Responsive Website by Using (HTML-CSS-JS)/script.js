@@ -38,7 +38,7 @@ let swiper = new Swiper(".testimonial_container", {
     el: ".swiper-pagination",
     clickable: true,
   },
-  breackpoints: {
+  breakpoints: {
     992: {
       slidesPerView: 3,
     },
@@ -47,3 +47,28 @@ let swiper = new Swiper(".testimonial_container", {
     },
   },
 });
+
+let sections = document.querySelectorAll("section[id");
+
+function scrollActive() {
+  const scrollY = window.pageYOffset;
+
+  sections.forEach((current) => {
+    const sectionHeight = current.offsetHeight;
+    const sectionTop = current.offsetTop - 80;
+
+    sectionId = current.getAttribute("id");
+
+    if (scrollY > sectionTop && scrollY <= sectionHeight + sectionTop) {
+      document
+        .querySelector(".menu li a[href*=" + sectionId + "]")
+        .classList.add("active");
+    } else {
+      document
+        .querySelector(".menu li a[href*=" + sectionId + "]")
+        .classList.remove("active");
+    }
+  });
+}
+
+window.addEventListener("scroll", scrollActive);
