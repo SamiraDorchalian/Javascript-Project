@@ -55,3 +55,26 @@ window.addEventListener("scroll", () => {
   }
   getSpaceBetweenTopAndElement();
 });
+
+const tabs = document.querySelectorAll(".portfolio-filter li");
+
+function changeColor() {
+  tabs.forEach((tab) => {
+    tab.classList.remove("current");
+  });
+  this.classList.add("current");
+}
+
+tabs.forEach((tab) => {
+  tab.addEventListener("click", changeColor);
+});
+
+let containerEl = document.querySelector(".work-items");
+let mixer = mixitup(containerEl, {
+  selectors: {
+    target: ".work-item",
+  },
+  animation: {
+    duration: 300,
+  },
+});
