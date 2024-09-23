@@ -229,3 +229,274 @@ h6 {
   top: 88%;
   left: 85%;
 }
+.about {
+  padding-top: 100px;
+  margin: 60px;
+}
+.about-content {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  row-gap: 70px;
+}
+.about-data {
+  gap: 80px;
+}
+.about-data .box {
+  position: relative;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+  gap: 20px;
+}
+.about-data .box::before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  background-color: transparent;
+  border: 13px solid transparent;
+  border-left-color: #fff;
+  transform: rotate(180deg);
+}
+.about-data .box .text,
+.about-data .box .skills {
+  width: 50%;
+}
+.about-data .box .text p {
+  margin-bottom: 20px;
+}
+.about-data .box .skills {
+  flex-direction: column;
+  align-items: start;
+  justify-content: space-between;
+}
+.skills .skill {
+  width: 100%;
+}
+.skill-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+}
+.skill-info h4 {
+  font-size: 16px;
+  font-weight: 500;
+}
+.progress {
+  height: 7px;
+  width: 100%;
+  background-color: #f1f1f1;
+  border-radius: 15px;
+  overflow: hidden;
+}
+.progress .progress-bar {
+  background-color: var(--clr);
+  width: var(--width);
+  height: 100%;
+}
+.about.active .progress .progress-bar {
+  animation: fill 2s forwards;
+}
+@keyframes fill {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: var(--width);
+  }
+}
+
+.about-details {
+  width: 100%;
+  justify-content: space-between;
+}
+.about-item {
+  display: flex;
+  align-items: center;
+}
+.about-item ion-icon {
+  font-size: 36px;
+  columns: #dededeea;
+  margin-right: 20px;
+}
+.about-item h2 {
+  font-size: 30px;
+}
+.about-item span {
+  font-size: 16px;
+  display: block;
+  font-weight: 400;
+  color: #5e5c7e;
+  margin-top: -10px;
+}
+.services {
+  margin: 60px;
+}
+.services-content {
+  display: flex;
+  column-gap: 30px;
+}
+.services-item {
+  width: 33.33%;
+  height: auto;
+  background-color: var(--clr2);
+  padding: 30px;
+  text-align: center;
+  color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px 0px var(--clr2);
+  transition: 0.3s ease-in-out;
+}
+.services-item:hover {
+  transform: translateY(-15px);
+}
+.services-item h3 {
+  color: #fff;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+.services-item:nth-child(2),
+.services-item:nth-child(2) h3 {
+  color: #454360;
+}
+.lookingJob {
+  text-align: center;
+  margin: 40px 0;
+}
+.lookingJob a {
+  text-decoration: none;
+  color: #ff4c60;
+}
+.experience {
+  margin: 60px;
+}
+.experience-boxs {
+  column-gap: 30px;
+}
+.experience-boxs .box {
+  background-color: #fff;
+  box-shadow: 0 5px 20px 0 rgba(69, 67, 96, 0.1);
+  border-radius: 20px;
+  padding: 30px;
+  overflow: hidden;
+}
+.experience-boxs .box .experience-item {
+  position: relative;
+  border-left: 1px solid #ff4c60;
+  padding-left: 80px;
+  padding-bottom: 40px;
+}
+.experience-boxs .box .experience-item::before {
+  content: "\f19d";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  left: -10px;
+  color: #ff4c60;
+  font-size: 20px;
+  background-color: #fff;
+}
+.experience-boxs .box .time {
+  color: #8b88b1;
+  font-size: 14px;
+}
+.experience-boxs .box .title {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.works {
+  margin: 60px;
+}
+.portfolio-filter {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  column-gap: 30px;
+  width: fit-content;
+  background-color: #eee;
+  padding-inline: 5px;
+  padding-block: 5px;
+  border-radius: 10px;
+}
+.portfolio-filter li {
+  cursor: pointer;
+  user-select: none;
+  padding: 6px;
+  width: 50px;
+  text-align: center;
+}
+.portfolio-filter li.current {
+  color: #353353;
+  background-color: #fff;
+  box-shadow: 0 5px 7px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+.work-items {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+.work-item {
+  width: 31%;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.work-item img {
+  max-width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.work-details {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(78, 61, 57, 0.3);
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateX(450px);
+  transition: 0.4 ease-in-out;
+}
+.work-item:hover .work-details {
+  transform: translateX(0);
+}
+.work-details .portfolio-links {
+  display: flex;
+  column-gap: 10px;
+}
+.work-details .portfolio-links ion-icon {
+  background-color: #fff;
+  color: orangered;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  padding: 5px;
+  cursor: pointer;
+}
+.work-details .portfolio-info {
+  position: absolute;
+  bottom: 10px;
+  text-align: center;
+  color: #fff;
+}
+.work-details .portfolio-info h4 {
+  color: #fff;
+  font-size: 20px;
+  font-weight: 500;
+}
+.work-details .portfolio-info p {
+  text-transform: uppercase;
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1080px;
+    justify-content: space-between;
+  }
+}
