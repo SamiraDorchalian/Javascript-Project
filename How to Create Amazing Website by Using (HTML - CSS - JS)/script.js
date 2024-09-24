@@ -78,3 +78,43 @@ let mixer = mixitup(containerEl, {
     duration: 300,
   },
 });
+
+var swiper = new Swiper(".reviews-top", {
+  loop: true,
+  pagination: {
+    el: ".swiper-pagination",
+  },
+});
+
+window.addEventListener("scroll", () => {
+  function getClassActive() {
+    let elements = document.querySelectorAll("section[id]");
+    elements.forEach((element) => {
+      let rect = element.getBoundingClientRect();
+      let space = rect.y;
+      if (space < 400) {
+        let AttId = element.getAttribute("id");
+        let menuItems = document.querySelectorAll(".menu-item");
+        menuItems.forEach((menuItem) => {
+          menuItem.classList.remove("active");
+          if (menuItem.getAttribute("data-id") === AttId) {
+            menuItem.classList.add("active");
+          }
+        });
+      }
+    });
+  }
+  getClassActive();
+});
+let menuToggle = document.querySelector(".menu-icon");
+menuToggle.addEventListener("click", () => {
+  menuToggle.classList.toggle("active");
+  if (menuToggle.classList.contains("active")) {
+    document.querySelector(".desktop-header").style.transform = "translateX(0)";
+    menuToggle.style.transform = "translate(100px)";
+  } else {
+    document.querySelector(".desktop-header").style.transform =
+      "translateX(-120px)";
+    menuToggle.style.transform = "translate(0)";
+  }
+});
