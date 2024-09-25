@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How To Create Responsive Website Using (HTML - CSS - JS)</title>
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <a href="#home" class="logo">
+          <img src="./MYOB.png" alt="" />
+        </a>
+        <div class="menu-toggle"></div>
+        <nav class="navbar">
+          <ul class="nav-menu">
+            <li class="menu-item current" data-id="home">
+              <a href="#home">home</a>
+            </li>
+            <li class="menu-item" data-id="about">
+              <a href="#about">about</a>
+            </li>
+            <li class="menu-item" data-id="services">
+              <a href="#services">services</a>
+            </li>
+            <li class="menu-item" data-id="portfolio">
+              <a href="#portfolio">portfolio</a>
+            </li>
+            <li class="menu-item" data-id="blog"><a href="#blog">blog</a></li>
+            <li class="menu-item" data-id="contact">
+              <a href="#contact">contact us</a>
+            </li>
+            <li class="search-dropdown">
+              <a href="#" class="search-icon">
+                <i class="fa-solid fa-magnifying-glass"></i>
+              </a>
+              <ul class="top-search-row">
+                <span class="close"><i class="fa-solid fa-xmark"></i></span>
+                <form action="" class="searchmenu-navbar-form">
+                  <input type="text" />
+                  <button>
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </button>
+                </form>
+              </ul>
+            </li>
+          </ul>
+          <span class="menu-close"></span>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="home" id="home">
+        <div class="content-home">
+          <div class="container container-home">
+            <div class="left-home">
+              <h1>Modern Digital Creative Agency 2024</h1>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                Excepturi expedita perspiciatis voluptatem accusamus blanditiis
+                aut quibusdam facilis eligendi nobis harum.
+              </p>
+              <button class="btn"><span>Get Started</span></button>
+            </div>
+            <div class="right-home" id="right-home">
+              <img
+                src="./image_gril2-removebg-preview.png"
+                alt=""
+                class="imgHome"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container about-container">
+          <div class="about-left">
+            <img src="./image1.png" alt="" />
+          </div>
+          <div class="about-right">
+            <div class="section-title">
+              <h3 class="upSection-title">About Us</h3>
+              <h2 class="main-title">
+                We Are Here <br />To offer Our Top Services
+              </h2>
+            </div>
+            <p>
+              <strong>A story of hardwork and perseverance</strong>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quaerat
+              odio architecto aut, neque molestiae, impedit dolores laborum quis
+              at accusantium aliquam aspernatur dolorum earum corrupti commodi
+              eaque aliquid harum laudantium.
+              <strong>Contact</strong>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+              officia natus est veniam officiis, quis laudantium excepturi
+              pariatur ipsa eaque!
+              <span class="email">example@gmail.com</span>
+            </p>
+            <button class="btn"><span>hire me</span></button>
+            <button class="btn white"><span>download cv</span></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="services" id="services">
+        <div class="section-title">
+          <h3 class="upSection-title">branding logo company</h3>
+          <h2 class="main-title">
+            We Ceaft Experiences <br />
+            With little help from the best
+          </h2>
+        </div>
+        <div class="container services-container">
+          <div class="services-boxs">
+            <div class="box">
+              <img src="" alt="" />
+              <h3>Creative design</h3>
+              <p>
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sed
+                omnis atque nemo officiis odit laudantium unde quisquam, neque
+                necessitatibus nulla?
+              </p>
+              
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
