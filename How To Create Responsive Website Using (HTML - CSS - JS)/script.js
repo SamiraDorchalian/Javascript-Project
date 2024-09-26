@@ -87,3 +87,17 @@ let swiper = new Swiper(".project-container", {
     },
   },
 });
+
+let swiper2 = new Swiper(".reviews-container", {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 3,
+    },
+  },
+});

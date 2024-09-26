@@ -481,7 +481,167 @@ section {
 .swiper-button-prev::after {
   font-size: 14px !important;
 }
-
+.team {
+  background-image: url(./imagebg-white-pink.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.team .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+.team .cards .card {
+  position: relative;
+  background-color: #fff;
+  box-shadow: 0 10px 30px 0 rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.social-media {
+  position: absolute;
+  top: -250px;
+  right: 10px;
+  z-index: 1000;
+  background-color: #ff3d69;
+  writing-mode: vertical-lr;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  padding: 20px 8px;
+  transition: 0.4s;
+}
+.team .card:hover .social-media {
+  top: 0;
+}
+.social-media a {
+  padding: 15px 40px;
+  color: #fff;
+}
+.team .cards .card .imgBox {
+  position: relative;
+  width: 100%;
+}
+.team .cards .card .imgBox::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: 0.4s;
+}
+.team .cards .card:hover .imgBox::before {
+  transform: scaleY(1);
+}
+.team .cards .card .imgBox img {
+  width: 100%;
+  object-fit: cover;
+}
+.card-content {
+  padding: 30px;
+  text-align: center;
+}
+.card-content span {
+  display: block;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--text-900);
+}
+.card-content span:nth-child(2) {
+  font-weight: 400;
+  font-size: 16px;
+}
+.row2 {
+  position: relative;
+  background-image: url(./imageback.png);
+  background-size: cover;
+  background-position: top;
+  background-attachment: fixed;
+  padding-top: 100px;
+  text-align: center;
+  padding-bottom: 20px;
+}
+.gradientBg {
+  background-color: transparent;
+  background-image: linear-gradient(170deg, #040416 0%, #04040416 100%);
+  opacity: 0.88;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+.row2-container .content {
+  z-index: 10000;
+  position: relative;
+}
+.row2-container p,
+.row2-container h3 {
+  color: #fff;
+  z-index: 200000;
+}
+.row2-container p {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.row2-container h3 {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1.5em;
+}
+.row2-container .btn {
+  background-color: #e62b4a;
+  transition: 0.4s;
+}
+.reviews-content {
+  padding-inline: 50px;
+}
+.reviews .card {
+  border: 1px solid #e5e5e5;
+  padding: 35px 10px;
+  background-color: #fff;
+  border-radius: 3px;
+  user-select: none;
+}
+.reviews .card p {
+  font-size: 15px;
+  color: #5e6167;
+  line-height: 25px;
+  font-weight: 400;
+  letter-spacing: 0.3px;
+  padding: 10px;
+}
+.reviews .card .info {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 10px;
+}
+.reviews .card .info .imgBox {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+.reviews .card .info .imgBox img {
+  width: 100%;
+  height: 100%;
+}
+.reviews .card .info p {
+  font-weight: 500;
+  font-size: 16px;
+  color: #040416;
+}
+.reviews .card .info p span {
+  display: block;
+  color: #e62b4a;
+  font-size: 14px;
+}
 @media (min-width: 1200px) {
   .container {
     width: 1200px;
