@@ -101,3 +101,17 @@ let swiper2 = new Swiper(".reviews-container", {
     },
   },
 });
+
+let menuToggle = document.querySelector(".menu-toggle");
+let navbar = document.querySelector(".navbar");
+
+menuToggle.addEventListener("click", () => {
+  navbar.classList.add("active");
+});
+
+let menuClose = document.querySelector(".menu-close");
+
+menuClose.addEventListener("click", () => {
+  let navbar = document.querySelector(".navbar");
+  navbar.classList.remove("active");
+});
