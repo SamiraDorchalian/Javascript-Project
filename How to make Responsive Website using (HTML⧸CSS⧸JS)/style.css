@@ -1,0 +1,330 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+}
+:root {
+  --yellow-color: #ffbb00;
+  --second-color: #dda200;
+  --bg-color: #222831;
+}
+::selection {
+  background-color: var(--yellow-color);
+  color: var(--bg-color);
+}
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background-color: var(--yellow-color);
+  border-radius: 30px;
+}
+::-webkit-scrollbar-track {
+  background-color: var(--bg-color);
+}
+ul {
+  list-style: none;
+  display: flex;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  margin: 0 60px;
+  padding: 0 60px;
+}
+.btn {
+  background-color: var(--yellow-color);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 600;
+  padding: 15px 25px;
+  border-radius: 50px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+}
+.btn i {
+  font-size: 25px;
+}
+.btn:hover {
+  background-color: var(--second-color);
+}
+section {
+  width: 100%;
+  height: auto;
+  padding: 45px 0 75px 0;
+}
+.section_title {
+  font-family: "Dancing Script", cursive;
+  font-size: 40px;
+  padding-bottom: 5px;
+  text-align: center;
+  margin-bottom: 70px;
+}
+.img_fluid {
+  max-width: 100%;
+  height: auto;
+}
+header {
+  position: fixed;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 100;
+}
+header.active {
+  background-color: rgba(0, 0, 0, 1);
+}
+.header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+.logo {
+  font-family: "Dancing Script", cursive;
+  color: #fff;
+  font-weight: 700;
+  font-size: 32px;
+}
+.menu {
+  display: flex;
+  column-gap: 40px;
+}
+.menu.active {
+  transform: translateX(0);
+}
+.menu li a {
+  color: #fff;
+  font-size: 18px;
+  transition: 0.3s;
+}
+.menu li a.active,
+.menu li a:hover {
+  color: var(--yellow-color);
+}
+#close_icon,
+#toggle_icon {
+  display: none;
+  font-size: 40px;
+}
+.hero {
+  background: url("./hamburger1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  padding-top: 180px;
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+.hero_container {
+  margin: 0 !important;
+}
+.swiper-wrapper {
+  margin: 0 60px;
+}
+.hero_content-item {
+  padding-right: 10px;
+}
+.hero_content-item h1 {
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+  font-size: 48px;
+}
+.hero_content-item p {
+  color: #fff;
+  font-size: 15px;
+  margin: 25px 0;
+  line-height: 1.6;
+}
+.hero_content-item .btn {
+  padding: 15px 40px;
+}
+.swiper-pagination {
+  position: absolute;
+  left: 0 !important;
+  padding-left: 130px;
+  display: flex;
+  align-items: center;
+}
+.swiper-pagination .swiper-pagination-bullet {
+  background-color: #fff;
+  opacity: 1;
+  width: 13px !important;
+  height: 13px !important;
+}
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: var(--yellow-color) !important;
+  width: 20px !important;
+  height: 20px !important;
+}
+
+.offer {
+  padding-top: 90px;
+  height: auto;
+}
+.offer_container {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+.offer_item {
+  background-color: var(--bg-color);
+  padding: 20px;
+  display: flex;
+  column-gap: 20px;
+  align-items: center;
+  border-radius: 10px;
+  width: 50%;
+  height: 220px;
+  color: #fff;
+  font-family: "Dancing Script", cursive;
+}
+.offer_imgBox {
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 5px solid var(--yellow-color);
+}
+.offer_content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  font-size: 20px;
+}
+.offer_content .off {
+  font-size: 14px;
+}
+.offer_content .off b {
+  font-size: 40px;
+}
+.offer_item button {
+  font-size: 16px;
+  white-space: nowrap;
+}
+.food_container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 30px;
+}
+.food ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-bottom: 40px;
+  padding: 0 20px;
+}
+.food ul li {
+  cursor: pointer;
+  user-select: none;
+}
+.food ul li.active {
+  background-color: var(--bg-color);
+  padding: 8px 25px;
+  border-radius: 50px;
+  color: #fff;
+}
+.food_item {
+  background-color: var(--bg-color);
+  border-radius: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 40px;
+}
+.food_imgBox {
+  height: 55%;
+  background-color: #eee;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-left-radius: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.food_imgBox img {
+  max-width: 100%;
+  max-height: 145px;
+  transition: 0.3s;
+}
+.food_imgBox:hover img {
+  transform: scale(1.1);
+}
+.food_content {
+  padding: 20px;
+  margin-bottom: 50px;
+  color: #fff;
+}
+.food_content h3 {
+  font-weight: 600;
+  font-size: 20px;
+}
+.food_content p {
+  margin: 10px 0 20px;
+  font-size: 14px;
+}
+.food_footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.food_footer span {
+  font-size: 18px;
+}
+.food_footer .icon {
+  background-color: var(--yellow-color);
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  padding: 20px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+  font-size: 24px;
+}
+.food .btn {
+  margin: auto;
+  margin-top: 30px;
+}
+.about {
+  background-color: var(--bg-color);
+}
+.about_container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  gap: 40px;
+}
+.about_imgBox {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.about_content .section_title {
+  text-align: left;
+  margin-bottom: 15px;
+}
+.about_content p {
+  margin-bottom: 30px;
+}

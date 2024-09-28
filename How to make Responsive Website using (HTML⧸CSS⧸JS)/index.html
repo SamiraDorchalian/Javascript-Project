@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>How to make Responsive Website using (HTML⧸CSS⧸JS)</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="header_container container">
+        <a href="#" class="logo">Feane</a>
+        <nav class="navbar">
+          <ul class="menu">
+            <li class="list"><a href="#hero" class="active">Home</a></li>
+            <li class="list"><a href="#menu">Menu</a></li>
+            <li class="list"><a href="#about">About</a></li>
+            <li class="list"><a href="#book">Book Table</a></li>
+            <i class="bx bx-x" id="close_icon"></i>
+          </ul>
+          <i class="bx bx-menu" id="toggle_icon"></i>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero" id="hero">
+      <div class="hero_container container swiper">
+        <div class="swiper-wrapper">
+          <div class="hero_content-item swiper-slide">
+            <h1>Fast Food Restaurant</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti
+              maxime <br />
+              iste nihil. Non facere sapiente, pariatur nihil consequatur sit
+              veniam ipsum <br />
+              vero provident perferendis, aliquid dolorum rerum distinctio
+              maiores maxime?
+            </p>
+            <button class="btn">Order Now</button>
+          </div>
+          <div class="hero_content-item swiper-slide">
+            <h1>Fast Food Restaurant</h1>
+            <p>
+              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              Reprehenderit qui <br />laborum ducimus adipisci delectus ab nisi,
+              nostrum <br />
+              magnam ratione quaerat dolore at rerum doloremque temporibus nihil
+              perspiciatis repellendus, debitis unde!
+            </p>
+            <button class="btn">Order Now</button>
+          </div>
+          <div class="hero_content-item swiper-slide">
+            <h1>Fast Food Restaurant</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Impedit
+              deleniti nihil <br />
+              a sunt expedita, beatae, culpa cum nulla pariatur nostrum dolorum
+              labore ipsa <br />
+              voluptatum rerum, dolore facere fuga at officia!
+            </p>
+            <button class="btn">Order Now</button>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="offer">
+      <div class="offer_container container">
+        <div class="offer_item">
+          <div class="offer_imgBox">
+            <img src="./tasty1.jpg" alt="" class="img_fluid" />
+          </div>
+          <div class="offer_content">
+            <h3>Tasty Thursdays</h3>
+            <span class="off"><b>20%</b>off</span>
+            <button class="btn">
+              <span>Prder Now</span>
+              <i class="bx bxs-cart"></i>
+            </button>
+          </div>
+        </div>
+        <div class="offer_item">
+          <div class="offer_imgBox">
+            <img src="./tasty2.jpg" alt="" class="img_fluid" />
+          </div>
+          <div class="offer_content">
+            <h3>Pizza Thursdays</h3>
+            <span class="off"><b>15%</b>off</span>
+            <button class="btn">
+              <span>Prder Now</span>
+              <i class="bx bxs-cart"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="food" id="menu">
+      <h2 class="section_title">Our Menu</h2>
+
+      <ul>
+        <li class="filter active" data-filter="all">All</li>
+        <li class="filter" data-filter=".burger">Burger</li>
+        <li class="filter" data-filter=".pizza">Pizza</li>
+        <li class="filter" data-filter=".pasta">Pasta</li>
+        <li class="filter" data-filter=".fries">Fries</li>
+      </ul>
+      <div class="food_container container">
+        <div class="food_item pizza">
+          <div class="food_imgBox">
+            <img src="./pizza1.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Pizza</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>20$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item burger">
+          <div class="food_imgBox">
+            <img src="./burger.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Burger</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>10$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item pizza">
+          <div class="food_imgBox">
+            <img src="./pizza2.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Pizza</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>10$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item pasta">
+          <div class="food_imgBox">
+            <img src="./pasta1.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Pasta</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>15$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item pasta">
+          <div class="food_imgBox">
+            <img src="./pasta2.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Pasta</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>15$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item fries">
+          <div class="food_imgBox">
+            <img src="./fries1.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Fries</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>35$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item fries">
+          <div class="food_imgBox">
+            <img src="./fries2.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Fries</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>35$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item pizza">
+          <div class="food_imgBox">
+            <img src="./pizza3.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Pizza</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>40$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item fries">
+          <div class="food_imgBox">
+            <img src="./fries3.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Fries</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>40$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="food_item pasta">
+          <div class="food_imgBox">
+            <img src="./pasta3.jpeg" alt="" class="img_fluid" />
+          </div>
+          <div class="food_content">
+            <h3>Delicious Pasta</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt
+              fugiat quia cumque aliquam ab maxime explicabo nostrum, expedita
+              corrupti consequatur.
+            </p>
+            <div class="food_footer">
+              <span>60$</span>
+              <a href="#" class="icon"><i class="bx bxs-cart"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <button class="btn">View More</button>
+    </section>
+
+    <section class="about" id="about">
+      <div class="about_container container">
+        <div class="about_imgBox">
+          <img src="./burgers-removebg-preview.png" alt="" class="img_fluid" />
+        </div>
+        <div class="about_content">
+          <h2 class="section_title">We Are Feane</h2>
+          <p>
+            There are many variations of Lorem ipsum, dolor sit amet consectetur
+            adipisicing elit. Ipsa commodi doloremque harum quia id minus,
+            similique ratione. Tempora voluptate magni rem perferendis
+            distinctio! Quia aperiam quos mollitia accusamus voluptatem fuga?
+          </p>
+          <button class="btn">Read More</button>
+        </div>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
