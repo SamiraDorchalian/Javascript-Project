@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Create a Responsive Coffee Shop Website Using HTML CSS And JavaScript
+    </title>
+    <link rel="stylesheet" href="./style.css" />
+
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="nav container">
+        <a href="#" class="logo">Q.Cafe</a>
+        <div class="navbar">
+          <a href="#home" class="nav-link">Home</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#products" class="nav-link">Products</a>
+          <a href="#team" class="nav-link">Team</a>
+          <a href="#reviews" class="nav-link">Reviews</a>
+        </div>
+        <div class="nav-icons">
+          <a href="#"><i class="bx bx-user"></i></a>
+          <a href="#"><i class="bx bx-shopping-bag"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <section class="home container" id="home">
+      <div class="home-text">
+        <h1>
+          Enjoy a new blend <br />
+          of coffee beans
+        </h1>
+        <p>
+          Brew or order a Perfect Coffee based on your mood Anywhere Anytime
+        </p>
+        <a href="#" class="btn">
+          <span>Shop Now</span>
+          <i class="bx bx-up-arrow-alt"></i>
+        </a>
+      </div>
+      <img src="./images/hero1.png" alt="image" class="home-img" />
+    </section>
+
+    <section class="services container" id="services">
+      <div class="heading">
+        <h2>
+          Blending culture, coffee & top <br />
+          notch services
+        </h2>
+      </div>
+      <div class="service-content">
+        <div class="ser-box">
+          <img src="./images/scr1.png" alt="image" />
+          <p>Equiment</p>
+        </div>
+        <div class="ser-box">
+          <img src="./images/scr2.png" alt="image" />
+          <p>Type Of Coffee</p>
+        </div>
+        <div class="ser-box">
+          <img src="./images/scr3.png" alt="image" />
+          <p>Take A Way</p>
+        </div>
+        <div class="ser-box">
+          <img src="./images/scr6.png" alt="image" />
+          <p>Beans Varient</p>
+        </div>
+        <div class="ser-box">
+          <img src="./images/scr5.png" alt="image" />
+          <p>Pastry</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="products container" id="products">
+      <div class="heading">
+        <h2>Our Top Selling Products</h2>
+        <p>
+          It takes a lot of heart and hard work at every step to create the best
+          coffee possible, and we know it takes a lot of grit to keep your own
+          grind going.
+        </p>
+      </div>
+      <div class="product-content">
+        <div class="product-box">
+          <i class="bx bx-heart heart-icon"></i>
+          <img src="./images/product1.jpeg" alt="image" />
+          <p>4 Type Avaialble</p>
+          <h2>Instant Coffee</h2>
+          <div class="product-info">
+            <span>$14</span>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <i class="bx bx-heart heart-icon"></i>
+          <img src="./images/product2.jpeg" alt="image" />
+          <p>4 Type Avaialble</p>
+          <h2>Black Coffee</h2>
+          <div class="product-info">
+            <span>$14</span>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <i class="bx bx-heart heart-icon"></i>
+          <img src="./images/product3.jpeg" alt="image" />
+          <p>4 Type Avaialble</p>
+          <h2>Latte</h2>
+          <div class="product-info">
+            <span>$14</span>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <i class="bx bx-heart heart-icon"></i>
+          <img src="./images/product4.jpeg" alt="image" />
+          <p>4 Type Avaialble</p>
+          <h2>Cappuccino</h2>
+          <div class="product-info">
+            <span>$14</span>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <i class="bx bx-heart heart-icon"></i>
+          <img src="./images/product5.jpeg" alt="image" />
+          <p>4 Type Avaialble</p>
+          <h2>Expresso</h2>
+          <div class="product-info">
+            <span>$14</span>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+        <div class="product-box">
+          <i class="bx bx-heart heart-icon"></i>
+          <img src="./images/product6.jpeg" alt="image" />
+          <p>4 Type Avaialble</p>
+          <h2>Mocha</h2>
+          <div class="product-info">
+            <span>$14</span>
+            <i class="bx bx-shopping-bag"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="team container" id="team">
+      <div class="heading">
+        <h2>Meet Our Experts</h2>
+      </div>
+      <div class="team-content">
+        <div class="team-box">
+          <img src="./images/chefgril2.png" alt="image" />
+          <h2>Sara Adib</h2>
+          <span>Co- Lead Chef</span>
+          <p>
+            As a roaster we search the world over to establish relationships
+            with great farmers cultivating great coffee,
+          </p>
+        </div>
+        <div class="team-box">
+          <img src="./images/chefgril3.png" alt="image" />
+          <h2>Bahar Zones</h2>
+          <span>Lead Chef</span>
+          <p>
+            As a roaster we search the world over to establish relationships
+            with great farmers cultivating great coffee,
+          </p>
+        </div>
+        <div class="team-box">
+          <img src="./images/chefgril4.png" alt="image" />
+          <h2>Maryam Khony</h2>
+          <span>Co- Lead Chef</span>
+          <p>
+            As a roaster we search the world over to establish relationships
+            with great farmers cultivating great coffee,
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews container" id="reviews">
+      <div class="heading">
+        <h2>Customer's Reviews</h2>
+      </div>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="review-box">
+              <img src="./images/review1.jpeg" alt="image" />
+              <h2>Janan Jadery</h2>
+              <span
+                >The taste of coffee is Stunning, <br />
+                subtle and smooth flavor.
+              </span>
+              <p>
+                The taste of coffee can vary depending on the type of bean,
+                roast level,and brewing method used. Some people prefer a strong
+                and bold taste, while others prefer a more subtle and smooth
+                flavor.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-box">
+              <img src="./images/review2.jpeg" alt="image" />
+              <h2>Zahra Jadery</h2>
+              <span
+                >The taste of coffee is Stunning, <br />
+                subtle and smooth flavor.
+              </span>
+              <p>
+                The taste of coffee can vary depending on the type of bean,
+                roast level,and brewing method used. Some people prefer a strong
+                and bold taste, while others prefer a more subtle and smooth
+                flavor.
+              </p>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="review-box">
+              <img src="./images/review3.jpeg" alt="image" />
+              <h2>Mona Jadery</h2>
+              <span
+                >The taste of coffee is Stunning, <br />
+                subtle and smooth flavor.
+              </span>
+              <p>
+                The taste of coffee can vary depending on the type of bean,
+                roast level,and brewing method used. Some people prefer a strong
+                and bold taste, while others prefer a more subtle and smooth
+                flavor.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
+
+    <section class="book container" id="book">
+      <img src="./images/book1.jpeg" alt="image" class="book-img" />
+      <div class="book-overlay"></div>
+      <div class="book-data">
+        <h2>
+          Let's book a Table <br />
+          For you
+        </h2>
+        <form action="book">
+          <div class="input-box">
+            <i class="bx bx-phone-call"></i>
+            <input type="tel" name="" id="" placeholder="Your Number" />
+          </div>
+          <div class="input-box">
+            <i class="bx bx-user"></i>
+            <input type="number" name="" id="" placeholder="People" />
+          </div>
+          <a href="#" class="book-btn">Book Table</a>
+        </form>
+        <p>We will contact you to confirm your booking</p>
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
