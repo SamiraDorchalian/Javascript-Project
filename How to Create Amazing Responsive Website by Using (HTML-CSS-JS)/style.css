@@ -196,7 +196,7 @@ header {
   }
 }
 .home {
-  background: url(./web_developer_img.png);
+  background: url("./image/sapiens0.png");
   background-position: center;
   background-size: cover;
   background-clip: border-box;
@@ -397,7 +397,7 @@ header {
   column-gap: 30px;
 }
 .solutions_container .imgBox {
-  background: url(./33.png);
+  background: url("./image/sapiens.png");
   background-position: center;
   background-size: cover;
   transform: translate(-50%, 0);
@@ -578,7 +578,7 @@ header {
   align-items: center;
   padding: 30px 20px;
   border-radius: 5px;
-  background: url(./backgroundImage.jpeg);
+  background: url("./image/backgroundImage.jpeg");
   max-width: 900px;
   margin: auto;
 }
