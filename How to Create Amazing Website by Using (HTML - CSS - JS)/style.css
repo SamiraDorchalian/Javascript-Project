@@ -61,7 +61,7 @@ section {
   position: absolute;
   top: -7px;
   left: -15px;
-  background-image: url();
+  background-image: url(./images/logo.svg);
   display: block;
   width: 37px;
   height: 37px;
@@ -232,46 +232,68 @@ h6 {
 .home-bg svg:nth-child(1) {
   top: 10%;
   left: 25%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(2) {
   top: 30%;
   left: 38%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(3) {
   top: 70%;
   left: 28%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(4) {
   top: 90%;
   left: 23%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(5) {
   top: 10%;
   left: 55%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(6) {
   top: 89%;
   left: 40%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(7) {
   top: 20%;
   left: 70%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(8) {
   top: 75%;
   left: 70%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(9) {
   top: 10%;
   left: 85%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(10) {
   top: 45%;
   left: 80%;
+  width: 20px;
+  height: 20px;
 }
 .home-bg svg:nth-child(11) {
   top: 88%;
   left: 85%;
+  width: 20px;
+  height: 20px;
 }
 .about {
   padding-top: 100px;
@@ -715,7 +737,7 @@ h6 {
   column-gap: 50px;
 }
 .contact-left {
-  background-image: url(./map-removebg-preview.png);
+  background-image: url("./images/map.png");
   font-size: 20px;
 }
 .contact-left p {
