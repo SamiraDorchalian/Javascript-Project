@@ -161,7 +161,7 @@ header.active {
 }
 
 .hero {
-  background: url("./hamburger1.jpg");
+  background: url("./images/hamburger1.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
