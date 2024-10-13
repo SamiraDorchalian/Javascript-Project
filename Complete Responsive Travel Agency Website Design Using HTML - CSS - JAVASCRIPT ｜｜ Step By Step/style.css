@@ -45,6 +45,9 @@ body.active {
   --bg-color-2: #222;
   --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.4);
 }
+section {
+  padding: 2rem 7%;
+}
 .btn {
   margin-top: 1rem;
   display: inline-block;
@@ -197,13 +200,71 @@ body.active {
 .header .login-form .btn {
   width: 100%;
 }
-
+.home {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding-top: 7rem;
+}
+.home .image {
+  flex: 1 1 45rem;
+}
+.home .image img {
+  width: 100%;
+}
+.home .content {
+  flex: 1 1 45rem;
+}
+.home .content h3 {
+  color: var(--text-color-1);
+  font-size: 4rem;
+}
+.home .content p {
+  color: var(--text-color-2);
+  font-size: 1.7rem;
+  line-height: 1.7;
+  padding: 1rem 0;
+}
+.form-container form {
+  background: var(--bg-color-1);
+  box-shadow: var(--bg-color-2);
+  border-radius: 0.5rem;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: center;
+}
+.form-container form .inputBox {
+  flex: 1 1 23rem;
+}
+.form-container form .inputBox span {
+  font-size: 1.7rem;
+  color: var(--text-color-2);
+}
+.form-container form .inputBox input {
+  font-size: 1.5rem;
+  color: var(--text-color-1);
+  background: var(--bg-color-2);
+  border-radius: 0.5rem;
+  margin: 0.5rem 0;
+  text-transform: none;
+  width: 100%;
+  padding: 1rem;
+}
+.form-container form .btn {
+  flex: 1 1 23rem;
+}
 @media (max-width: 991px) {
   html {
     font-size: 55%;
   }
   .header {
     padding: 1.5rem 2rem;
+  }
+  section {
+    padding: 2rem;
   }
 }
 @media (max-width: 768px) {
