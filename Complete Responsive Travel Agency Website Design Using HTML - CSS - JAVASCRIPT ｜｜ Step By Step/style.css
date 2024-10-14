@@ -375,6 +375,83 @@ section {
   font-size: 1.5rem;
   line-height: 1.8;
 }
+.pricing .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.pricing .box-container .box {
+  background: var(--bg-color-1);
+  border-radius: 0.5rem;
+  box-shadow: var(--box-shadow);
+  padding: 2rem;
+  text-align: center;
+}
+.pricing .box-container .box h3 {
+  padding: 1rem;
+  background: var(--bg-color-2);
+  border-radius: 0.5rem;
+  font-size: 2rem;
+  color: var(--text-color-1);
+}
+.pricing .box-container .box .price {
+  padding-top: 2rem;
+}
+.pricing .box-container .box .price span {
+  font-size: 2rem;
+  color: var(--text-color-2);
+}
+.pricing .box-container .box .price .amount {
+  font-size: 5rem;
+  color: var(--text-color-1);
+  font-weight: bolder;
+}
+.pricing .box-container .box ul {
+  padding: 0.5rem 0;
+  list-style: none;
+}
+.pricing .box-container .box ul li {
+  padding: 1rem 0;
+  font-size: 1.7rem;
+  color: var(--text-color-2);
+}
+.review .review-slider {
+  box-shadow: var(--box-shadow);
+}
+.review .review-slider .slide {
+  background: var(--bg-color-1);
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 3rem;
+}
+.review .review-slider .slide img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.5rem;
+}
+.review .review-slider .slide h3 {
+  font-size: 2.5rem;
+  color: var(--text-color-1);
+}
+.review .review-slider .slide p {
+  font-size: 1.6rem;
+  color: var(--text-color-2);
+  line-height: 1.7;
+  padding: 1rem 0;
+}
+.review .review-slider .slide .stars {
+  padding: 1rem 0;
+  padding-bottom: 1.5rem;
+}
+.review .review-slider .slide .stars i {
+  font-size: 2rem;
+  color: var(--orange);
+}
+.swiper-pagination-bullet-active {
+  background: var(--orange);
+}
 @media (max-width: 991px) {
   html {
     font-size: 55%;
