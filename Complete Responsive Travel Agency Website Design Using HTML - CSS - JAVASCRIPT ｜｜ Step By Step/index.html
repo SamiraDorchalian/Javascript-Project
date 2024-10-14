@@ -16,6 +16,10 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -69,9 +73,9 @@
 
     <section class="home" id="home">
       <div class="image">
-        <img src="./images/home-img.png" alt="" />
+        <img src="./images/home-img.png" alt="" data-aos="fade-down" />
       </div>
-      <div class="content">
+      <div class="content" data-aos="fade-up">
         <h3>adventure is worthwhile</h3>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur,
@@ -82,7 +86,7 @@
       </div>
     </section>
 
-    <section class="form-container">
+    <section class="form-container" data-aos="zoom-in">
       <form action="">
         <div class="inputBox">
           <span>where to</span>
@@ -103,7 +107,7 @@
     <section class="packages" id="packages">
       <h1 class="heading">our <span>packages</span></h1>
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/p-1.jpeg" alt="" />
             <h3><i class="fas fa-map-marker-alt"></i> mumbai</h3>
@@ -118,7 +122,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/p-2.jpeg" alt="" />
             <h3><i class="fas fa-map-marker-alt"></i> hawaii</h3>
@@ -133,7 +137,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/p-3.jpeg" alt="" />
             <h3><i class="fas fa-map-marker-alt"></i> sydney</h3>
@@ -148,7 +152,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/p-4.jpeg" alt="" />
             <h3><i class="fas fa-map-marker-alt"></i> paris</h3>
@@ -163,7 +167,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/p-5.jpeg" alt="" />
             <h3><i class="fas fa-map-marker-alt"></i> tokyo</h3>
@@ -178,7 +182,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/p-6.jpeg" alt="" />
             <h3><i class="fas fa-map-marker-alt"></i> egypt</h3>
@@ -199,7 +203,7 @@
       <h1 class="heading">our <span>services</span></h1>
 
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos="zoom-in">
           <span>01</span>
           <i class="fas fa-hotel"></i>
           <h3>affordable hotels</h3>
@@ -207,7 +211,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, minus.
           </p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="zoom-in">
           <span>02</span>
           <i class="fas fa-plane"></i>
           <h3>fastest travel</h3>
@@ -215,7 +219,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, minus.
           </p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="zoom-in">
           <span>03</span>
           <i class="fas fa-utensils"></i>
           <h3>food and drinks</h3>
@@ -223,7 +227,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, minus.
           </p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="zoom-in">
           <span>04</span>
           <i class="fas fa-globe"></i>
           <h3>around the world</h3>
@@ -231,7 +235,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, minus.
           </p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="zoom-in">
           <span>05</span>
           <i class="fas fa-hiking"></i>
           <h3>new adventures</h3>
@@ -239,7 +243,7 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, minus.
           </p>
         </div>
-        <div class="box">
+        <div class="box" data-aos="zoom-in">
           <span>06</span>
           <i class="fas fa-bullhorn"></i>
           <h3>safety guide</h3>
@@ -254,7 +258,7 @@
       <h1 class="heading">our <span>pricing</span></h1>
 
       <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos="zoom-in-up">
           <h3>basic plan</h3>
           <div class="price">
             <span>$</span>
@@ -271,7 +275,7 @@
           <a href="#" class="btn">choose plan</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="zoom-in-up">
           <h3>standaed plan</h3>
           <div class="price">
             <span>$</span>
@@ -288,7 +292,7 @@
           <a href="#" class="btn">choose plan</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="zoom-in-up">
           <h3>premium plan</h3>
           <div class="price">
             <span>$</span>
@@ -309,10 +313,10 @@
 
     <section class="review" id="review">
       <h1 class="heading">client's <span>review</span></h1>
-      <div class="swiper review-slider">
+      <div class="swiper review-slider" data-aos="zoom-in">
         <div class="swiper-wrapper">
           <div class="swiper-slide slide">
-            <img src="./images/pic-1.jpeg" alt="" />
+            <img src="./images/pic-1.png" alt="" />
             <h3>john deo</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -331,7 +335,7 @@
           </div>
 
           <div class="swiper-slide slide">
-            <img src="./images/pic-2.jpeg" alt="" />
+            <img src="./images/pic-2.png" alt="" />
             <h3>john deo</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -350,7 +354,7 @@
           </div>
 
           <div class="swiper-slide slide">
-            <img src="./images/pic-3.jpeg" alt="" />
+            <img src="./images/pic-2.png" alt="" />
             <h3>john deo</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -369,7 +373,7 @@
           </div>
 
           <div class="swiper-slide slide">
-            <img src="./images/pic-4.jpeg" alt="" />
+            <img src="./images/pic-4.png" alt="" />
             <h3>john deo</h3>
             <p>
               Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -394,14 +398,14 @@
     <section class="contact" id="contact">
       <h1 class="heading"><span>contact</span> us</h1>
 
-      <form action="">
+      <form action="" data-aos="zoom">
         <div class="inputBox">
-          <input type="text" placeholder="name" />
-          <input type="email" placeholder="email" />
+          <input type="text" placeholder="name" data-aos="fade-up" />
+          <input type="email" placeholder="email" data-aos="fade-up" />
         </div>
         <div class="inputBox">
-          <input type="number" placeholder="number" />
-          <input type="text" placeholder="subject" />
+          <input type="number" placeholder="number" data-aos="fade-up" />
+          <input type="text" placeholder="subject" data-aos="fade-up" />
         </div>
 
         <textarea
@@ -410,6 +414,7 @@
           id=""
           cols="30"
           rows="10"
+          data-aos="fade-up"
         ></textarea>
         <input type="submit" value="send message" class="btn" />
       </form>
@@ -418,7 +423,7 @@
     <section class="blogs" id="blogs">
       <h1 class="heading">our <span>blogs</span></h1>
       <div class="box-conatiner">
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/blog-1.png" alt="" />
           </div>
@@ -432,7 +437,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/blog-2.png" alt="" />
           </div>
@@ -446,7 +451,7 @@
           </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up">
           <div class="image">
             <img src="./images/blog-3.png" alt="" />
           </div>
@@ -462,7 +467,63 @@
       </div>
     </section>
 
+    <section class="footer">
+      <div class="box-container">
+        <div class="box" data-aos="fade-up">
+          <h3>our branches</h3>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> iran</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> korea</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> china</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> japan</a>
+          <a href="#"><i class="fas fa-map-marker-alt"></i> canada</a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>quick links</h3>
+          <a href="#home"><i class="fas fa-chevron-right"></i> home</a>
+          <a href="#packages"><i class="fas fa-chevron-right"></i> packages</a>
+          <a href="#services"><i class="fas fa-chevron-right"></i> services</a>
+          <a href="#pricing"><i class="fas fa-chevron-right"></i> pricing</a>
+          <a href="#review"><i class="fas fa-chevron-right"></i> review</a>
+          <a href="#contact"><i class="fas fa-chevron-right"></i> contact</a>
+          <a href="#blogs"><i class="fas fa-chevron-right"></i> blogs</a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>contact info</h3>
+          <a href="#"><i class="fas fa-phone"></i> +123-111-2222</a>
+          <a href="#"><i class="fas fa-phone"></i> +123-222-3333</a>
+          <a href="#"><i class="fas fa-envelop"></i> example2024@gmail.com</a>
+          <a href="#"><i class="fas fa-envelop"></i> example@gmail.com</a>
+          <a href="#">
+            <i class="fas fa-map-marker0alt"></i>
+            susa, iran - 021021
+          </a>
+        </div>
+
+        <div class="box" data-aos="fade-up">
+          <h3>follow us</h3>
+          <a href="#"><i class="fab fa-facebook-f"></i> facebook</a>
+          <a href="#"><i class="fab fa-twitter"></i> twitter</a>
+          <a href="#"><i class="fab fa-instagram"></i> instagram</a>
+          <a href="#"><i class="fab fa-linkedin"></i> linkedin</a>
+          <a href="#"><i class="fab fa-pinterest"></i> pinterest</a>
+        </div>
+      </div>
+      <div class="credit">
+        create by <span>mis.samira dorchalian</span> | all right reserved
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="./script.js"></script>
+
+    <script>
+      AOS.init({
+        duration: 800,
+        delay: 400,
+      });
+    </script>
   </body>
 </html>
