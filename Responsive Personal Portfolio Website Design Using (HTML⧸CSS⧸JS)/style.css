@@ -411,9 +411,13 @@ header .container {
   align-items: center;
   justify-content: center;
 }
-.resume_wrap-icon ion-icon {
+.resume_wrap-icon ion-icon,
+.resume_wrap-icon .fa-suitcase {
   font-size: 25px;
   color: #fff;
+}
+.fa-suitcase {
+  font-size: 20px !important;
 }
 .resume_wrap-content {
   width: calc(100% - 100px);
@@ -443,7 +447,8 @@ header .container {
 .resume_wrap:hover .resume_wrap-icon {
   background-color: #fff;
 }
-.resume_wrap:hover .resume_wrap-icon ion-icon {
+.resume_wrap:hover .resume_wrap-icon ion-icon,
+.resume_wrap:hover .resume_wrap-icon i {
   color: var(--main-color);
 }
 .resume_wrap:hover h4,
