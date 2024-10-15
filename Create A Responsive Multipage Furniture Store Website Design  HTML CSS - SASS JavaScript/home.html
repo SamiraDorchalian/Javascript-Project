@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Create A Responsive Multipage Furniture Store Website Design HTML CSS -
+      SASS JavaScript
+    </title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <a href="#home.html" class="logo">
+        <i class="fas fa-lightbulb"></i> furni
+      </a>
+      <form action="" class="search-form">
+        <input
+          type="search"
+          placeholder="search here ..."
+          name=""
+          id="search-box"
+        />
+        <label for="search-box" class="fas fa-search"></label>
+      </form>
+      <div class="icons">
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <div id="search-btn" class="fas fa-search"></div>
+        <div id="cart-btn" class="fas fa-shopping-cart"></div>
+        <div id="login-btn" class="fas fa-user"></div>
+      </div>
+    </header>
+
+    <div id="closer" class="fas fa-times"></div>
+
+    <nav class="navbar">
+      <a href="#home.html">home</a>
+      <a href="#shop.html">shop</a>
+      <a href="#about.html">about</a>
+      <a href="#team.html">team</a>
+      <a href="#blog.html">blog</a>
+      <a href="#contact.html">contact</a>
+    </nav>
+
+    <div class="shopping-cart">
+      <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="./images/shop-1.png" alt="image" />
+        <div class="content">
+          <h3>model furniture</h3>
+          <span class="quantity"> 1 </span>
+          <span class="multiply"> x </span>
+          <span class="price"> $140.00 </span>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="./images/shop-2.png" alt="image" />
+        <div class="content">
+          <h3>model furniture</h3>
+          <span class="quantity"> 1 </span>
+          <span class="multiply"> x </span>
+          <span class="price"> $140.00 </span>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="./images/shop-3.png" alt="image" />
+        <div class="content">
+          <h3>model furniture</h3>
+          <span class="quantity"> 1 </span>
+          <span class="multiply"> x </span>
+          <span class="price"> $140.00 </span>
+        </div>
+      </div>
+
+      <div class="box">
+        <i class="fas fa-times"></i>
+        <img src="./images/shop-4.png" alt="image" />
+        <div class="content">
+          <h3>model furniture</h3>
+          <span class="quantity"> 1 </span>
+          <span class="multiply"> x </span>
+          <span class="price"> $140.00 </span>
+        </div>
+      </div>
+
+      <h3 class="total">total : <span>$560.00</span></h3>
+
+      <a href="#" class="btn">checkout cart</a>
+    </div>
+
+    <div class="login-form">
+      <form action="">
+        <h3>login form</h3>
+        <input type="email" placeholder="enter your email" class="box" />
+        <input type="password" placeholder="enter your password" class="box" />
+        <div class="remember">
+          <input type="checkbox" name="" id="remember-me" />
+          <label for="remember-me">remember me</label>
+        </div>
+        <input type="submit" value="login now" class="btn" />
+        <p>forget password? <a href="#">click here</a></p>
+        <p>don't have an account? <a href="#">create now</a></p>
+      </form>
+    </div>
+
+
+    
+
+    <script src="./js/script.js"></script>
+  </body>
+</html>
