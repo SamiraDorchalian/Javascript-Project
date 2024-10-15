@@ -289,6 +289,85 @@ section {
   text-decoration: underline;
 }
 
+@keyframes fadeOut {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+}
+.home {
+  position: relative;
+}
+.home .slides-container .slide {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  display: none;
+}
+.home .slides-container .slide.active {
+  display: flex;
+}
+.home .slides-container .slide .content {
+  flex: 1 1 40rem;
+  animation: fadeLeft 0.4s linear 0.4s backwards;
+}
+.home .slides-container .slide .content span {
+  font-size: 2.5rem;
+  color: #779;
+}
+.home .slides-container .slide .content h3 {
+  font-size: 6rem;
+  color: #244d4d;
+  padding-top: 0.5rem;
+}
+.home .slides-container .slide .content p {
+  font-size: 1.5rem;
+  color: #779;
+  padding: 0.5rem 0;
+  line-height: 2;
+}
+.home .slides-container .slide .image {
+  flex: 1 1 40rem;
+  padding: 3rem 0;
+}
+.home .slides-container .slide .image img {
+  width: 100%;
+  animation: fadeOut 0.4s linear;
+}
+.home #slide-next,
+.home #slide-prev {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  height: 5rem;
+  width: 5rem;
+  line-height: 5rem;
+  font-size: 3rem;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border: 0.1rem solid #244d4d;
+  text-align: center;
+  background: #fff;
+  cursor: pointer;
+}
+.home #slide-next:hover,
+.home #slide-prev:hover {
+  background: #244d4d;
+  color: #fff;
+}
+.home #slide-next {
+  right: 2rem;
+}
+.home #slide-prev {
+  left: 2rem;
+}
+
 .footer {
   background: #f6fbf6;
 }
@@ -356,6 +435,14 @@ section {
   section {
     padding: 3rem 2rem;
   }
+  .home #slide-next,
+  .home #slide-prev {
+    top: 95%;
+  }
+  .home #slide-prev {
+    left: auto;
+    right: 8rem;
+  }
 }
 @media (max-width: 768px) {
   #search-btn {
@@ -378,5 +465,8 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 50%;
+  }
+  .home .slides-container .slide .content h3 {
+    font-size: 4rem;
   }
 }/*# sourceMappingURL=style.css.map */
