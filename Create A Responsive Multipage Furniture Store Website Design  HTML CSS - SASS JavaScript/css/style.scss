@@ -652,7 +652,6 @@ section {
     padding: 2rem;
     text-align: center;
     border: $border;
-
     img {
       height: 8rem;
       margin-bottom: 1rem;
@@ -666,6 +665,148 @@ section {
       color: $light-color;
       line-height: 2;
       padding: 1rem 0;
+    }
+  }
+}
+
+.team .box-container {
+  @include grid(30rem);
+  .box {
+    position: relative;
+    overflow: hidden;
+    border: $border;
+    box-shadow: $box-shadow;
+    background: $light-bg;
+
+    &:hover {
+      .image img {
+        transform: scale(1.1);
+      }
+      .share {
+        left: 0;
+      }
+    }
+
+    .share {
+      width: 7rem;
+      height: 50rem;
+      position: absolute;
+      top: 0;
+      left: -8rem;
+      z-index: 10;
+      background: $green;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      gap: 0.7rem;
+
+      a {
+        height: 5rem;
+        width: 5rem;
+        line-height: 5rem;
+        font-size: 2.2rem;
+        color: $white;
+        border: 0.1rem solid $white;
+        text-align: center;
+
+        &:hover {
+          background: $white;
+          color: $green;
+        }
+      }
+    }
+
+    .image {
+      height: 50rem;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .user {
+      padding: 1rem 1.5rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      h3 {
+        font-size: 2rem;
+        color: $green;
+      }
+
+      span {
+        font-size: 1.5rem;
+        color: $light-color;
+      }
+    }
+  }
+}
+
+.blog .box-container {
+  @include grid(30rem);
+
+  .box {
+    border: $border;
+    background: $light-bg;
+    box-shadow: $box-shadow;
+
+    &:hover .image img {
+      transform: scale(1.2);
+    }
+
+    .image {
+      height: 25rem;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .content {
+      padding: 1.5rem 2rem;
+
+      h3 {
+        font-size: 2rem;
+        color: $green;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $light-color;
+        line-height: 2;
+        padding: 1rem 0;
+      }
+      .icons {
+        margin-top: 2rem;
+        padding-top: 1.5rem;
+        border-top: $border;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+          font-size: 1.4rem;
+          color: $light-color;
+
+          &:hover {
+            color: $green;
+          }
+
+          i {
+            padding-right: 0.5rem;
+            color: $green;
+          }
+        }
+      }
     }
   }
 }
