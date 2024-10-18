@@ -741,6 +741,46 @@ section {
   color: #244d4d;
 }
 
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+}
+.contact form {
+  padding: 3rem;
+  background: #f6fbf6;
+  flex: 1 1 40rem;
+}
+.contact form h3 {
+  font-size: 3rem;
+  padding-bottom: 1rem;
+  color: #244d4d;
+}
+.contact form span {
+  display: block;
+  padding-bottom: 1rem;
+  color: #779;
+  font-size: 1.6rem;
+}
+.contact form .box {
+  width: 100%;
+  background: none;
+  border-bottom: 0.1rem solid #244d4d;
+  font-size: 1.6rem;
+  color: #244d4d;
+  text-transform: none;
+  padding: 0.5rem 0;
+  margin-bottom: 1rem;
+}
+.contact form textarea {
+  height: 15rem;
+  resize: none;
+}
+.contact .map {
+  flex: 1 1 40rem;
+  width: 100%;
+}
+
 .footer {
   background: #f6fbf6;
 }

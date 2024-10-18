@@ -811,6 +811,48 @@ section {
   }
 }
 
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem 0;
+
+  form {
+    padding: 3rem;
+    background: $light-bg;
+    flex: 1 1 40rem;
+
+    h3 {
+      font-size: 3rem;
+      padding-bottom: 1rem;
+      color: $green;
+    }
+    span {
+      display: block;
+      padding-bottom: 1rem;
+      color: $light-color;
+      font-size: 1.6rem;
+    }
+    .box {
+      width: 100%;
+      background: none;
+      border-bottom: $border;
+      font-size: 1.6rem;
+      color: $green;
+      text-transform: none;
+      padding: 0.5rem 0;
+      margin-bottom: 1rem;
+    }
+    textarea {
+      height: 15rem;
+      resize: none;
+    }
+  }
+  .map {
+    flex: 1 1 40rem;
+    width: 100%;
+  }
+}
+
 .footer {
   background: $light-bg;
 
