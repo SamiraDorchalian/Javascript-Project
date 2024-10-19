@@ -463,9 +463,10 @@ section {
   @include grid(30rem);
 
   .banner {
-    height: 25rem;
+    height: 40rem;
     overflow: hidden;
     position: relative;
+    align-items: center;
 
     img {
       height: 100%;
