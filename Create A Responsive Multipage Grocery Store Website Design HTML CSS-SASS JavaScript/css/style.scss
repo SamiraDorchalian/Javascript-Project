@@ -270,6 +270,93 @@ section {
   display: none;
 }
 
+@keyframes fadeLeft {
+  0% {
+    transform: translateX(-5rem);
+    opacity: 0;
+  }
+}
+
+@keyframes fadeUp {
+  0% {
+    transform: scale(0.5);
+    opacity: 0;
+  }
+}
+
+.home {
+  padding-top: 14rem;
+  background: url("./images/.backgroundImage.jpeg") no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+
+  .slide-container {
+    .slide {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      display: none;
+
+      &.active {
+        display: flex;
+      }
+
+      .content {
+        flex: 1 1 40rem;
+        animation: fadeLeft 0.4s linear 0.4s backwards;
+
+        span {
+          color: $light-color;
+          font-size: 2.5rem;
+        }
+
+        h3 {
+          font-size: 6rem;
+          color: $black;
+          padding: 0.5rem 0;
+        }
+      }
+      .image {
+        flex: 1 1 40rem;
+        margin: 3rem 0;
+
+        img {
+          width: 100%;
+          animation: fadeUp 0.4s linear;
+        }
+      }
+    }
+  }
+  #next-slide,
+  #prev-slide {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem;
+    box-shadow: $box-shadow;
+    text-align: center;
+    background: $white;
+    font-size: 3rem;
+    color: $black;
+    cursor: pointer;
+
+    &:hover {
+      background: $green;
+      color: $white;
+    }
+  }
+  #prev-slide {
+    left: 2rem;
+  }
+  #next-slide {
+    right: 2rem;
+  }
+}
+
 .footer {
   background: $light-bg;
 
@@ -343,6 +430,16 @@ section {
   section {
     padding: 3rem 2rem;
   }
+
+  .home #next-slide,
+  .home #prev-slide {
+    transform: translateY(0);
+    top: 88%;
+  }
+  .home #prev-slide {
+    left: auto;
+    right: 8rem;
+  }
 }
 @media (max-width: 768px) {
   #menu-btn {
@@ -390,5 +487,8 @@ section {
 @media (max-width: 450px) {
   html {
     font-size: 55%;
+  }
+  .home .slide-container .slide .content h3 {
+    font-size: 5rem;
   }
 }
