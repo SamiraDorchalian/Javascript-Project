@@ -688,6 +688,66 @@ section {
   }
 }
 
+.blogs .box-container {
+  @include grid(30rem);
+
+  .box {
+    border: $border;
+
+    &:hover .image img {
+      transform: scale(1.2);
+    }
+
+    .image {
+      height: 25rem;
+      width: 100%;
+      overflow: hidden;
+
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      }
+    }
+    .content {
+      padding: 2rem 1.5rem;
+
+      .icons {
+        border-bottom: $border;
+        padding-bottom: 1.7rem;
+        margin-bottom: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+          font-size: 1.4rem;
+          color: $light-color;
+
+          &:hover {
+            color: $green;
+          }
+          i {
+            color: $green;
+            padding-right: 0.5rem;
+          }
+        }
+      }
+      h3 {
+        font-size: 2.2rem;
+        color: $black;
+      }
+
+      p {
+        font-size: 1.4rem;
+        color: $light-color;
+        line-height: 2;
+        padding: 1rem 0;
+      }
+    }
+  }
+}
+
 .footer {
   background: $light-bg;
 
