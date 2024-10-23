@@ -474,6 +474,79 @@ section {
   color: #bac34e;
 }
 
+.about {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.about .image {
+  flex: 1 1 40rem;
+}
+.about .image img {
+  width: 100%;
+}
+.about .content {
+  flex: 1 1 40rem;
+}
+.about .content span {
+  color: #bac34e;
+  font-size: 2.5rem;
+}
+.about .content h3 {
+  color: #222;
+  font-size: 3rem;
+  padding-top: 0.5rem;
+}
+.about .content p {
+  color: #666;
+  font-size: 1.4rem;
+  line-height: 2;
+  padding: 1rem 0;
+}
+
+.gallery .box-conatiner {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+  gap: 1.5rem;
+}
+.gallery .box-conatiner .box {
+  height: 25rem;
+  overflow: hidden;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.gallery .box-conatiner .box img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.gallery .box-conatiner .box:hover img {
+  transform: scale(1.2);
+}
+.gallery .box-conatiner .box:hover .icons {
+  bottom: 0;
+}
+.gallery .box-conatiner .box .icons {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.7);
+  padding: 1.5rem 0;
+  position: absolute;
+  bottom: -6rem;
+  left: 0;
+  right: 0;
+  z-index: 10;
+}
+.gallery .box-conatiner .box .icons a {
+  font-size: 2.5rem;
+  color: #fff;
+  margin: 0 1.5rem;
+}
+.gallery .box-conatiner .box .icons a:hover {
+  color: #bac34e;
+}
+
 .footer {
   background: #f3f3f3;
 }
